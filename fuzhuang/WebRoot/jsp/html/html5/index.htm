@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>锐浪HTML5报表</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script language="javascript" type="text/javascript">
+        var reportItems = [
+            {
+                typeName: "各种基础报表",
+                typeID: "basic",
+                items: [
+                    { report: "1a.SimpleList", data: "xmlCustomer", name: "简单表格", options: "gridFitWidth" },
+                    { report: "1b.DoubleLayerTitle", data: "xmlCustomer", name: "双层表头", options: "gridFitWidth" },
+                    { report: "1f.PictureCardList", data: "xmlPicture", name: "表格中图像与文字" },
+                    { report: "1l.AlternatingBackColor", data: "xmlCustomer", name: "交替色显示明细行", options: "gridFitWidth" },
+                    { report: "5a.MemoBoxExpression", data: "xmlSaleDetail", name: "表达式运算" },
+                    { report: "5b.ShowVarNo", data: "xmlCustomer", name: "显示行号序号" },
+                    //{ report: "5c.MultiLayerTitleFree", data: "xmlCustomer", name: "层高不等多层表头" },
+                    { report: "5f.NoneBorderGrid", data: "xmlCustomer", name: "无边框表格" },
+                    { report: "5g.NoneRowLIneGrid", data: "xmlCustomer", name: "无行线表格" },
+                    { report: "5p.IntEnumFormatText", data: "xmlIntEnumFormatText", name: "整数枚举文字格式化" },
+                ],
+            },
+            {
+                typeName: "分组报表",
+                typeID: "group",
+                items: [
+                    { report: "2a.GroupBasic", data: "xmlSaleDetail", name: "基本分组报表" },
+                    { report: "2b.GroupByMultiFields", data: "xmlCustomer", name: "依据多个字段分组报表" },
+                    { report: "2c.GroupMultiLevel", data: "xmlCustomer", name: "多级分组报表" },
+                    { report: "2d.GroupCellMerged", data: "xmlCustomer", name: "分组单元格合并报表" },
+                    //{ report: "2d.GroupCellMerged", data: "xmlCustomer", name: "分组单元格合并报表" },
+                    { report: "2f.GroupCellMergedMulti", data: "xmlCustomer", name: "多级分组单元格合并报表" },
+                    { report: "2h.GroupSectionShowColLine", data: "xmlSaleDetail", name: "分组节显示列线报表" },
+                    //{ report: "2i.GroupSectionNoneBorder", data: "xmlSaleDetail", name: "分组节不显示边框线" },
+                    { report: "2l.GroupSortBySummary", data: "xmlSaleDetail", name: "分组按统计排序" },
+                ],
+            },
+            {
+                typeName: "交叉报表",
+                typeID: "crosstab",
+                items: [
+                    { report: "3a.CrosstabBasic", data: "xmlCrossTab", name: "交叉表起步" },
+                    { report: "3b.CrosstabHtotal", data: "xmlCrossTab", name: "交叉表横向合计" },
+                    { report: "3b.CrosstabVtotal", data: "xmlCrossTab", name: "交叉表纵向合计" },
+                    { report: "3d.CrosstabHPercent", data: "xmlCrossTab", name: "交叉表横向百分比" },
+                    { report: "3d.CrosstabVPercent", data: "xmlCrossTab", name: "交叉表纵向百分比" },
+                    { report: "3f.CrosstabByDay", data: "xmlCrossTabByDay", name: "交叉表按日交叉" },
+                    { report: "3f.CrosstabByMonth", data: "xmlCrossTabByMonth", name: "交叉表按月交叉" },
+                    { report: "3h.CrosstabHAvg", data: "xmlCrossTab", name: "交叉表横向平均" },
+                    { report: "3i.CrosstabGroupCellMerged", data: "xmlCrossTabByCity", name: "交叉表纵向单元格合并" },
+                    { report: "3j.CrosstabMultiColumn(1)", data: "xmlCrossTab", name: "交叉表多数据列(1)" },
+                    { report: "3k.CrosstabMultiColumn(2)", data: "xmlCrossTab", name: "交叉表多数据列(2)" },
+                    { report: "3l.CrosstabCustomSummary", data: "xmlCrossTab", name: "交叉表自定义统计" },
+                    { report: "3m.CrosstabHSubtotal(1)", data: "xmlCrossTabSubtotal", name: "交叉表横向小计(1)" },
+                    { report: "3n.CrosstabHSubtotal(2)", data: "xmlCrossTabSubtotal", name: "交叉表横向小计(2)" },
+                    //{ report: "3o.CrosstabHList", data: "xmlCustomer", name: "交叉表横向显示表格" },
+                    { report: "3p.CrosstabByYearMonth", data: "xmlCrossTabYearMonth", name: "交叉表按年月交叉" },
+                    { report: "3q.CrosstabCalendar", data: "xmlCrossTabCalendar", name: "日历报表" },
+                ],
+            },
+            {
+                typeName: "图表(Chart)",
+                typeID: "chart",
+                items: [
+                    { report: "ChartBar", data: "jsonChart", name: "柱图(Bar)", options: "" },
+                    { report: "ChartStackedBar", data: "jsonChart", name: "叠加柱图(StackedBar)", options: "singleChartFill" },
+                    { report: "ChartStackedBar100", data: "jsonChart", name: "百分比柱状图(StackedBar100)", options: "singleChartFill" },
+                    { report: "ChartColumn", data: "jsonChart", name: "横向柱状图(Column)", options: "singleChartFill" },
+                    { report: "ChartStackedColumn", data: "jsonChart", name: "横向叠加柱状图(StackedColumn)", options: "singleChartFill" },
+                    { report: "ChartStackedColumn100", data: "jsonChart", name: "横向百分比柱状图(StackedColumn100)", options: "singleChartFill" },
+                    { report: "ChartLine", data: "jsonChart", name: "连线图(Line)", options: "singleChartFill" },
+                    { report: "ChartCurveLine", data: "jsonChart", name: "曲线图(CurveLine)", options: "singleChartFill" },
+                    { report: "ChartPie", data: "jsonChartOneGroup", name: "饼图(Pie)", options: "singleChartFill" },
+                    { report: "ChartScatter", data: "jsonChart_xyz", name: "散列点图(Scattter)", options: "singleChartFill" },
+                    { report: "ChartScatterLine", data: "jsonChart_xyz", name: "散列连线图(ScattterLine)", options: "singleChartFill" },
+                    { report: "ChartScatterCurveLine", data: "jsonChart_xyz", name: "散列曲线图(ScattterLine)", options: "singleChartFill" },
+                    { report: "ChartScatterBubble", data: "jsonChart_xyz", name: "气泡图(Bubble)", options: "singleChartFill" },
+                    { report: "ChartY2Mixed", data: "jsonY2Mixed", name: "双轴柱图线图混合", options: "singleChartFill" },
+                ],
+            },
+            {
+                typeName: "自由表格(FreeGrid)",
+                typeID: "freegrid",
+                items: [
+                    { report: "9a.FreeGrid1", data: "xmlEmployeeOne", name: "自由表格" },
+                    { report: "9b.FreeGridDetailGrid", data: "xmlFreeGridDetailGrid", name: "自由表格并明细网格" },
+                ],
+            },
+            {
+                typeName: "报表脚本",
+                typeID: "script",
+                items: [
+                    { report: "7-1a.AppendBlankRecord", data: "xml7-1a.AppendBlankRecord", name: "脚本.追加空白记录" },
+                    { report: "7-1b.SpecialDisplayText", data: "xmlProduct", name: "脚本.设置特殊显示文字" },
+                    { report: "7-1c.TextShowByCondition", data: "xml7-1c.TextShowByCondition", name: "脚本.文字按条件突出显示" },
+                    { report: "7-1d.OutRowByCondition", data: "xml7-1c.TextShowByCondition", name: "脚本.整行突出显示" },
+                    { report: "7-1h.ShowRowByCondition", data: "xmlSaleDetail", name: "脚本.按条件隐藏数据行" },
+                    { report: "7-2a.CalcField", data: "xml7-2a.CalcField", name: "脚本.计算字段" },
+                    { report: "7-2b.AccTotal", data: "xmlSaleByProduct", name: "脚本.累计求和(收发存)" },
+                    { report: "7-2c.MergedCellSummary", data: "xml7-2c.MergedCellSummary", name: "脚本.占列分组不重复求和" },
+                    { report: "7-3e.CustomGroup", data: "xml7-3e.CustomGroup", name: "脚本.自定义条件分组" },
+                    { report: "7-3f.GroupByFirstChar", data: "xml7-3f.GroupByFirstChar", name: "脚本.按首字母分组" },
+                ],
+            },
+        ];
+        function window_onload() {
+            fillReportList();
+        }
+
+        function fillReportList() {
+            var lenGroup = reportItems.length,
+                i,
+                j,
+                lenItem,
+                group,
+                item,
+                //treeNode = document.getElementById("report_tree"),
+                htmlText = '<h2>锐浪HTML5报表演示</h2>\n<p>手机扫一扫，在手机上查看</p>\n<div style="text-align:left">\n<img src="img/grhtml5_demo_url.png" />\n</div>';
+
+            //参考 index_static.htm 中的 html 代码来动态生成报表节点 html 定义
+            for (i = 0; i < lenGroup; i++) {
+                group = reportItems[i];
+
+                htmlText +=  '<h3>' + group.typeName + '</h3>\n';
+                lenItem = group.items.length;
+                for (j = 0; j < lenItem; j++) {
+                    item = group.items[j];
+                    htmlText += '<li><a href="report_view.htm?' +
+                        encodeURI('report=' + item.report +
+                            '&data=' + item.data +
+                            '&title=' + item.name +
+                            (item.options? '&options=' + item.options : '')
+                        )
+                        + '" target="_blank">' + item.name + '</a></li>\n';
+                }
+                htmlText += "</ul>\n</div>\n";
+            }
+
+            //htmlText += '<div style="text-align:center">\n<img src="img/grhtml5_demo_url.png" />\n<p>扫一扫</p>\n</div>';
+
+            //treeNode.innerHTML = htmlText;
+            document.body.innerHTML = htmlText;
+        }
+    </script>
+</head>
+<body onload="window_onload()">
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Web报表(B/S报表)演示 - 从xml文本变量中载入报表模板数据</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script src="../../CreateControl.js" type="text/javascript"></script>
+  <script type="text/javascript">
+var xmlText = "<xml>\n"
++ "<row><CustomerID>ALFKI</CustomerID><CompanyName>三川实业有限公司</CompanyName><ContactName>刘小姐</ContactName><Address>大崇明路 50 号</Address><City>天津</City><Region>华北</Region><PostalCode>343567</PostalCode><Phone>(030) 30074321</Phone></row>\n"
++ "<row><CustomerID>ANATR</CustomerID><CompanyName>东南实业</CompanyName><ContactName>王先生</ContactName><Address>承德西路 80 号</Address><City>天津</City><Region>华北</Region><PostalCode>234575</PostalCode><Phone>(030) 35554729</Phone></row>\n"
++ "</xml>";
+function window_onload() {
+    ReportViewer.Report.LoadDataFromXML( xmlText ); //从xml文本变量中载入报表模板数据
+    
+    ReportViewer.Start(); //启动报表运行
+}
+  </script>
+
+</head>
+<body style="margin:0" onload="window_onload()">
+  <script type="text/javascript">
+	    CreatePrintViewerEx("100%", "100%", "report.grf", "", false, "");
+  </script>
+</body>
+</html> 

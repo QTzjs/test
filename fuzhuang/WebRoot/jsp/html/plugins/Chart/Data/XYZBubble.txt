@@ -1,0 +1,10 @@
+<xml>
+<row><Series>序列1</Series><X_Val>120</X_Val><Y_Val>2174.5</Y_Val><Z_Val>4.5</Z_Val></row>
+<row><Series>序列1</Series><X_Val>80</X_Val><Y_Val>1800.6</Y_Val><Z_Val>6.3</Z_Val></row>
+<row><Series>序列1</Series><X_Val>150</X_Val><Y_Val>900.6</Y_Val><Z_Val>8.1</Z_Val></row>
+<row><Series>序列1</Series><X_Val>130</X_Val><Y_Val>2500.8</Y_Val><Z_Val>5</Z_Val></row>
+
+<row><Series>序列2</Series><X_Val>180</X_Val><Y_Val>3004.5</Y_Val><Z_Val>2</Z_Val></row>
+<row><Series>序列2</Series><X_Val>210</X_Val><Y_Val>1800</Y_Val><Z_Val>2.5</Z_Val></row>
+</xml> 
+

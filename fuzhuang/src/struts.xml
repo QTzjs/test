@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<!-- 修改上传文件的大小 -->
+	<constant name="struts.multipart.maxSize" value="50000000"/>
+	<package name="happy" namespace="/" extends="struts-default">
+	<action name="index*" method = "{1}" class="com.happy.action.IndexAction">
+			<result name="loginout" type="redirectAction">loginloginout.action</result>
+			<result name="info">/jsp/order/order_info.jsp</result>
+		</action>
+	<action name="login*" method = "{1}" class="com.happy.action.loginAction">
+			<result name="index">/jsp/index.jsp</result>
+			<result name="login">/jsp/login.jsp</result>
+		</action>
+	<action name="code*" method = "{1}" class="com.happy.action.codeAction">
+			
+	</action>
+	<action name="user*" method = "{1}" class="com.happy.action.UserAction">
+			
+	</action>
+	
+	<action name="WxPay*" method = "{1}" class="com.happy.action.WxPay">
+		
+	</action>
+	
+	<action name="place*" method = "{1}" class="com.happy.action.PlaceAction">
+	   <result name="info">/jsp/model_info.jsp</result>
+	   <result name="suess">/jsp/place_list.jsp</result>
+	</action>
+	
+	<action name="te*" method = "{1}" class="com.happy.action.technologyAction">
+		<result name="gong">/jsp/gong_xu.jsp</result>
+	</action>
+	
+	<!-- 款式 -->
+	<action name="style*" method="{1}" class="com.happy.action.StyleAction">
+	</action>
+	
+	<action name="sub*" method="{1}" class="com.happy.action.SubRAction">
+	</action>
+	
+	<action name="re*" method="{1}" class="com.happy.action.RecordAction">
+	</action>	
+	
+	</package>
+	<package name="interfaces" namespace="/interfaces" extends="struts-default">
+		<!-- 接口总调度开始 -->
+		<action name="main*" method="{1}" class="com.happy.action.MainAction">
+		</action>
+		<!-- 接口总调度结束 -->
+		<!-- 维修类型接口开始 -->
+		<action name="repairtype*" method="{1}" class="com.happy.action.RepairTypeAction">
+		</action>		
+		<!-- 维修类型接口结束 -->
+		<!-- 产品品牌接口开始 -->
+		<action name="brand*" method="{1}" class="com.happy.action.BrandAction">
+		</action>
+		<!-- 产品品牌接口结束 -->
+		<!-- 产品分类接口开始 -->
+		<action name="classify*" method="{1}" class="com.happy.action.ClassifyAction">
+		</action>
+		<!-- 产品分类接口结束 -->
+		<!-- 产品型号接口开始 -->
+		<action name="model*" method="{1}" class="com.happy.action.ModelAction">
+		</action>
+		<!-- 产品型号接口结束 -->
+		<!-- 工单接口开始 -->
+		<action name="order*" method="{1}" class="com.happy.action.OrderAction">
+		</action>
+		<!-- 工单接口结束 -->
+		<!-- 查看常用信息接口开始 -->
+		<action name="user*" method="{1}" class="com.happy.action.UsersAction">
+		</action>
+		<!-- 查看常用信息接口结束 -->
+		<!-- 查看常用信息接口开始 -->
+		<action name="maintenanceapply*" method="{1}" class="com.happy.action.MaintenanceApplyAction">
+		</action>
+		<!-- 查看常用信息接口结束 -->
+	</package>
+	
+</struts>   

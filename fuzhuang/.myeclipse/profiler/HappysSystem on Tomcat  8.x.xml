@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="app_preset_prof_preset_name">HappysSystem on Tomcat  8.x Launch Configuration</entry>
+<entry key="app_preset_prof_preset_filter_s"/>
+<entry key="app_preset_prof_preset_filter_p">com.happy.action.*,
+com.happy.advice.*,
+com.happy.alipay.config.*,
+com.happy.alipay.sign.*,
+com.happy.alipay.util.*,
+com.happy.alipaytrans.config.*,
+com.happy.alipaytrans.sign.*,
+com.happy.alipaytrans.util.*,
+com.happy.dao.*,
+com.happy.emchat.api.*,
+com.happy.emchat.comm.*,
+com.happy.emchat.httpclient.apidemo.*,
+com.happy.emchat.httpclient.utils.*,
+com.happy.emchat.httpclient.vo.*,
+com.happy.emchat.jersey.apidemo.*,
+com.happy.emchat.jersey.utils.*,
+com.happy.emchat.jersey.vo.*,
+com.happy.filter.*,
+com.happy.getui.*,
+com.happy.model.*,
+com.happy.redis.*,
+com.happy.service.*,
+com.happy.timerlistener.*,
+com.happy.util.*</entry>
+<entry key="app_preset_prof_preset_alloc_p">10</entry>
+<entry key="app_preset_"/>
+<entry key="app_preset_prof_preset_samplingRefreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_stacks_p">false</entry>
+<entry key="app_preset_prof_preset_roots_p">com.happy.action.**
+com.happy.advice.**
+com.happy.alipay.config.**
+com.happy.alipay.sign.**
+com.happy.alipay.util.**
+com.happy.alipaytrans.config.**
+com.happy.alipaytrans.sign.**
+com.happy.alipaytrans.util.**
+com.happy.dao.**
+com.happy.emchat.api.**
+com.happy.emchat.comm.**
+com.happy.emchat.httpclient.apidemo.**
+com.happy.emchat.httpclient.utils.**
+com.happy.emchat.httpclient.vo.**
+com.happy.emchat.jersey.apidemo.**
+com.happy.emchat.jersey.utils.**
+com.happy.emchat.jersey.vo.**
+com.happy.filter.**
+com.happy.getui.**
+com.happy.model.**
+com.happy.redis.**
+com.happy.service.**
+com.happy.timerlistener.**
+com.happy.util.**
+</entry>
+<entry key="profiler.settings.instrument.empty.methods">false</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">false</entry>
+<entry key="app_preset_prof_preset_samplingRate_s">100</entry>
+<entry key="app_preset_prof_preset_filterMode_s">true</entry>
+<entry key="app_preset_prof_preset_selector"/>
+<entry key="app_preset_prof_preset_refreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_runnables_p">true</entry>
+<entry key="app_preset_prof_preset_filterMode_p">false</entry>
+<entry key="app_preset_prof_preset_memoryMode_p">true</entry>
+</properties>

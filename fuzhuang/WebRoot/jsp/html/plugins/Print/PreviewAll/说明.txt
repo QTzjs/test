@@ -1,0 +1,5 @@
+预览全部内容而只打印部分内容：
+1、如果是用Grid++本身的打印预览窗口，应该调用 IGridppReport.PrintPreviewEx 方法进行预览，GenerateStyle 参数用 grpgsPreviewAll。
+2、如果是用 GRPrintViewer 控件预览展现报表，应该将其 GenerateStyle 属性设为 grpgsPreviewAll。
+3、在报表模板设计时，将不要打印的报表元素（如部件框、内容格等）的“打印类别”属性设为“表单”，这些数据在预览时可见，但在打印时不会输出。
+4、用背景图进行套打设计更方便 ，请参考帮助“开发指南->报表打印->票据套打”部分。

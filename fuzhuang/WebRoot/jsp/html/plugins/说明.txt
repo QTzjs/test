@@ -1,0 +1,29 @@
+﻿不能直接在Windows资源管理器中双击网页文件进行查看，而应该在web服务器下或在编程IDE下运行。请将此目录下的例子文件复制到web服务器的虚拟目录下，或编程IDE的项目目录下，按实际URL在IE浏览器中访问运行。
+
+#当前目录下文件简单说明：
+CreateControl.js：在网页中创建插件的函数，每个展现报表的网页都要引用此文件并调用里面的函数。
+Event_*r.htm：报表设计器、报表查询显示器、报表打印显示器、报表引擎对象的事件响应函数定义示范。
+simple.htm：一个简单的例子，用报表打印显示器插件在网页中展现报表，实际应用采用 simple_UseCreateControl.htm 的方式更简便。
+simple_UseCreateControl.htm：一个简单的例子，采用 CreateControl.js 中的函数在网页中插入报表插件，实际应用都应采用这样的方式。
+
+TBD...各个例子分别写，或直接写到htm文件中，减少同步的麻烦
+#各个例子目录简单说明：
+AdjustPositionByPageSetup\：根据页面设置动态调整报表中的浮动部件框的输出位置。
+ChartData\：示范图表的两种数据形式。
+CheckBoxAndRadioBox\：示范在报表中实现检测框(ChecBox)与无线框(RadioBox)。
+CrosstabDynamicColumn\：交叉表实现列动态显示与隐藏。
+CustomDraw\：利用部件框的自绘功能实现自定义图形绘制。
+CustomGroupAddBlankGroup\：为交叉表添加数据中不存在的交叉项目，即将空数据项目也显示在交叉表中。
+ExportOnePageColumn\：多栏报表在导出时不分栏
+InvoicePlusPicture\：发票头部打印一个图像，示范将图像数据包装在XML数据的参数部分。
+JSON\：说明如何将 JSON 数据加载到报表中
+ManualFillRecord\：用脚本代码将明细记录数据加载到报表中。
+PreviewAll\：不用背景图设计套打，把全部数据都设计出来并能预览显示，而只打印部分需要套打上去的内容。
+PrintAnother\：实现报表预览与报表打印不一样。
+PrintCopiesLimit\：实现一个报表最多打印份数的限制。
+PrintEvent\：示范打印相关的几个事件。
+PrintGenerateStyle\：示范报表设计中的“打印类别”属性设定与打印生成类型参数的关系。
+PrintSelection\：示范打印选中的内容。
+SubReportDeep\：示范多级子报表，即子报表中再包含子报表。
+TwoReportViewer\：在一个网页中展现两个报表显示器。
+XmlTextNewLine\：在报表XML数据中实现文字换行，既可以用转义文字“&#x0D;&#x0A;”，也可以直接用回车换行字符。

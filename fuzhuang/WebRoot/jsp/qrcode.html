@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>使用JQueryQrCode生成二维码</title>
+<script type="text/javascript" src="./code_js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./code_js/qrcode.js"></script>
+</head>
+<style type="text/css">
+#one{
+    width:230px;
+    height:170px;
+    border:1px red solid;
+    background-color: white;
+}
+td{
+   font-size:10px;
+   font-weight: bold;
+
+}
+body{
+background-color: gray;
+
+}
+
+</style>
+<body>
+
+<script type="text/javascript">
+//参数1表示图像大小，取值范围1-10；参数2表示质量，取值范围'L','M','Q','H'
+
+
+ $(function (){
+    var tab="";
+    var id="";
+    for(var i=1;i<4;i++){ 
+       id=i;
+   	   var ele="<div id=\"one\"><table><tr><td rowspan=5 id=\"qrcode"+id+"\"></td><td>颜色：白色</td></tr><tr><td>尺寸：2L</td></tr><tr><td>件数：100</td></tr><tr><td>包号：1</td></tr><tr><td>缸号：</td></tr><tr><td>生产号：DK3</td></tr></table></div>";
+       tab+=ele;
+	   var content = "XD201706152"+i;
+       $("body").html(tab);
+	    code(content,id);
+     } 
+  });
+  function code(content,id){
+        var qr = qrcode(10, 'M');
+        qr.addData(content);
+		qr.make();
+		$("#qrcode"+id+"").html(qr.createImgTag());
+  }
+
+/* var dom=document.createElement('DIV');
+dom.innerHTML = qr.createImgTag();
+var element=document.getElementById("qrcode");
+element.appendChild(dom); */
+  
+</script>
+</body>
+</html>

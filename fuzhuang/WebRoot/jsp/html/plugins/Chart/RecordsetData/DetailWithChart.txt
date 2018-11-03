@@ -1,0 +1,34 @@
+﻿<xml>
+
+<detailgrid><CustomerID>BLONP</CustomerID><CompanyName>国皓</CompanyName><ContactName>黄雅玲</ContactName><ContactTitle>市场经理</ContactTitle><Address>广发北路 10 号</Address><City>大连</City><Region>东北</Region><PostalCode>565479</PostalCode><Country>中国</Country><Phone>(0671) 88601531</Phone><Fax>(0671) 88601532</Fax></detailgrid>
+<detailgrid><CustomerID>CACTU</CustomerID><CompanyName>威航货运有限公司</CompanyName><ContactName>刘先生</ContactName><ContactTitle>销售代理</ContactTitle><Address>经七纬二路 13 号</Address><City>大连</City><Region>东北</Region><PostalCode>120412</PostalCode><Country>中国</Country><Phone>(061) 11355555</Phone><Fax>(061) 11354892</Fax></detailgrid>
+<detailgrid><CustomerID>CENTC</CustomerID><CompanyName>三捷实业</CompanyName><ContactName>王先生</ContactName><ContactTitle>市场经理</ContactTitle><Address>英雄山路 84 号</Address><City>大连</City><Region>东北</Region><PostalCode>130083</PostalCode><Country>中国</Country><Phone>(061) 15553392</Phone><Fax>(061) 15557293</Fax></detailgrid>
+<detailgrid><CustomerID>HUNGC</CustomerID><CompanyName>五金机械</CompanyName><ContactName>苏先生</ContactName><ContactTitle>销售代表</ContactTitle><Address>德昌路甲 29 号</Address><City>大连</City><Region>东北</Region><PostalCode>564576</PostalCode><Country>中国</Country><Phone>(053) 5556874</Phone><Fax>(053) 5552376</Fax></detailgrid>
+<detailgrid><CustomerID>MEREP</CustomerID><CompanyName>华科</CompanyName><ContactName>吴小姐</ContactName><ContactTitle>市场助理</ContactTitle><Address>和光北路 952 号</Address><City>大连</City><Region>东北</Region><PostalCode>280235</PostalCode><Country>中国</Country><Phone>(0514) 5558054</Phone><Fax>(0514) 5558055</Fax></detailgrid>
+<detailgrid><CustomerID>QUEDE</CustomerID><CompanyName>兰格英语</CompanyName><ContactName>王先生</ContactName><ContactTitle>结算经理</ContactTitle><Address>广安南街 82 号</Address><City>北京</City><Region>华北</Region><PostalCode>785678</PostalCode><Country>中国</Country><Phone>(010) 65554252</Phone><Fax>(010) 65554545</Fax></detailgrid>
+<detailgrid><CustomerID>QUEEN</CustomerID><CompanyName>留学服务中心</CompanyName><ContactName>赵小姐</ContactName><ContactTitle>市场助理</ContactTitle><Address>定成路 92 号</Address><City>北京</City><Region>华北</Region><PostalCode>785878</PostalCode><Country>中国</Country><Phone>(010) 85551189</Phone><Fax></Fax></detailgrid>
+<detailgrid><CustomerID>GREAL</CustomerID><CompanyName>仪和贸易</CompanyName><ContactName>王先生</ContactName><ContactTitle>市场经理</ContactTitle><Address>经三纬四路 18 号</Address><City>北京</City><Region>华北</Region><PostalCode>120475</PostalCode><Country>中国</Country><Phone>(010) 65557555</Phone><Fax></Fax></detailgrid>
+
+<chart><Region>东北</Region><ProductID>1</ProductID><ProductName>苹果汁</ProductName><Amount>810</Amount></chart>
+<chart><Region>华北</Region><ProductID>1</ProductID><ProductName>苹果汁</ProductName><Amount>2091.6</Amount></chart>
+<chart><Region>华东</Region><ProductID>1</ProductID><ProductName>苹果汁</ProductName><Amount>1404</Amount></chart>
+<chart><Region>华南</Region><ProductID>1</ProductID><ProductName>苹果汁</ProductName><Amount>900</Amount></chart>
+<chart><Region>西南</Region><ProductID>1</ProductID><ProductName>苹果汁</ProductName><Amount>90</Amount></chart>
+<chart><Region>东北</Region><ProductID>10</ProductID><ProductName>蟹</ProductName><Amount>843.2</Amount></chart>
+<chart><Region>华北</Region><ProductID>10</ProductID><ProductName>蟹</ProductName><Amount>3534</Amount></chart>
+<chart><Region>华东</Region><ProductID>10</ProductID><ProductName>蟹</ProductName><Amount>1736</Amount></chart>
+<chart><Region>华南</Region><ProductID>10</ProductID><ProductName>蟹</ProductName><Amount>713</Amount></chart>
+<chart><Region>西南</Region><ProductID>10</ProductID><ProductName>蟹</ProductName><Amount>3565</Amount></chart>
+<chart><Region>东北</Region><ProductID>11</ProductID><ProductName>民众奶酪</ProductName><Amount>1050</Amount></chart>
+<chart><Region>华北</Region><ProductID>11</ProductID><ProductName>民众奶酪</ProductName><Amount>3355.8</Amount></chart>
+<chart><Region>华东</Region><ProductID>11</ProductID><ProductName>民众奶酪</ProductName><Amount>667.8</Amount></chart>
+<chart><Region>华南</Region><ProductID>11</ProductID><ProductName>民众奶酪</ProductName><Amount>2037</Amount></chart>
+<chart><Region>西南</Region><ProductID>11</ProductID><ProductName>民众奶酪</ProductName><Amount>315</Amount></chart>
+<chart><Region>东北</Region><ProductID>21</ProductID><ProductName>花生</ProductName><Amount>420</Amount></chart>
+<chart><Region>华北</Region><ProductID>21</ProductID><ProductName>花生</ProductName><Amount>3754</Amount></chart>
+<chart><Region>华东</Region><ProductID>21</ProductID><ProductName>花生</ProductName><Amount>180</Amount></chart>
+<chart><Region>华南</Region><ProductID>21</ProductID><ProductName>花生</ProductName><Amount>1012</Amount></chart>
+<chart><Region>西南</Region><ProductID>21</ProductID><ProductName>花生</ProductName><Amount>320</Amount></chart>
+
+</xml>
+

@@ -1,0 +1,6 @@
+<xml>
+<row><group>第一</group><qty>100</qty><amt>120</amt><netamt>110</netamt></row>
+<row><group>第二</group><qty>200</qty><amt>180</amt><netamt>150</netamt></row>
+<row><group>第三</group><qty>120</qty><amt>110</amt><netamt>100</netamt></row>
+<row><group>第四</group><qty>130</qty><amt>140</amt><netamt>125</netamt></row>
+</xml>

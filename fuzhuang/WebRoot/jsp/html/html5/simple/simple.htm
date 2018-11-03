@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>锐浪HTML5报表 - 一个最简单的例子</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../grhtml5-6.5-min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        function window_onload() {
+            //创建报表显示器，参数指定其在网页中的占位标签的ID，关联的报表模板URL，关联的报表数据URL
+            var reportViewer = window.rubylong.grhtml5.insertReportViewer("report_holder", "simple.grf", "simple_json.txt");
+
+            reportViewer.start(); //启动报表运行，生成报表
+        }
+    </script>
+</head>
+<body onload="window_onload()">
+    <div id="report_holder">
+    </div>
+</body>
+</html>

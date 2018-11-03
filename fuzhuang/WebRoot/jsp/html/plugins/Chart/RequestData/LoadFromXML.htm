@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Web报表(B/S报表)演示 - 将从服务器获得的XML数据提供给图表</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style type="text/css">
+        html,body {
+            margin:0;
+            height:100%;
+        }
+    </style>
+	<script src="../../CreateControl.js" type="text/javascript"></script>
+	<script src="../../GRUtility.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+function window_onload() 
+{
+    ReportViewer.Stop();
+    
+    var Report = ReportViewer.Report;
+    
+    //关联报表事件
+    Report.OnChartRequestData = OnChartRequestData;
+
+    ReportViewer.Start();
+}
+
+function OnChartRequestData(Chart)
+{
+    //提示：实际引用中应该从产生动态数据的网页程序URL处获取XML数据，URL中还可以附带查询条件参数
+    //只要URL响应的XML文本数据满足图表需要的格式要求就可以顺利加载进图表中
+    //图表XML数据形式请参考帮助的“开发指南->图表->运行时从XML数据包中载入图表数据”部分
+    var Report = ReportViewer.Report;
+    
+    if (Chart.Name == "ChartBar")
+	{
+        var xml = Report.ExtractXMLFromURL("xmlBar1.txt");
+        Chart.LoadDataFromXML(xml, true, true, true);
+	}
+    else if (Chart.Name == "ChartPie")
+	{
+        Chart.SeriesCount = 3;
+        Chart.SetSeriesLabel(0, "张三");
+        Chart.SetSeriesLabel(1, "李四");
+        Chart.SetSeriesLabel(2, "王五");
+            
+        //从网上取数据并转存到xmlDom中，然后载入到图表中
+        var xml = Report.ExtractXMLFromURL("xmlBar2.txt");
+        Chart.LoadDataFromXML(xml, false, false, true);
+	}
+    else if (Chart.Name == "ChartScatterLine")
+	{
+        var xml = Report.ExtractXMLFromURL("xmlXYScatter.txt");
+        Chart.LoadXYDataFromXML(xml, true);
+	}
+    else if (Chart.Name == "ChartBubble")
+	{
+        var xml = Report.ExtractXMLFromURL("xmlXYZBubble.txt");
+        Chart.LoadXYZDataFromXML(xml, true);
+	}
+}
+ 	</script>   
+</head>
+<body style="margin:0" onload="return window_onload()">
+    <script type="text/javascript"> 
+	    CreatePrintViewerEx("100%", "100%", "Chart.grf", "", false, "");
+	    //CreateDisplayViewerEx("100%", "100%", "Chart.grf", "", false, "");
+    </script>
+</body>
+</html>
+ 

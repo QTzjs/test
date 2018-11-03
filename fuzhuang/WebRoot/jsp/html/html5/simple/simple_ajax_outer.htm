@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>锐浪HTML5报表 - 用AJAX方式载入报表模板与报表数据</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../grhtml5-6.5-min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        function window_onload() {
+            //创建报表显示器，参数指定其在网页中的占位标签的ID，表模板URL与报表数据URL不指定，而是在后面的AJAX操作中提供相关数据
+            var reportViewer = window.rubylong.grhtml5.insertReportViewer("report_holder");
+
+            reportViewer.reportPrepared = false; //指定报表生成需要加载报表模板
+            reportViewer.dataPrepared = false;   //指定报表生成需要加载报表数据 
+
+            //报表在模板与数据都载入后会自动生成
+            ajaxRequestText("simple.grf", "GET", function (responseText) {
+                reportViewer.loadReport(responseText);
+            });
+            ajaxRequestText("simple_json.txt", "GET", function (responseText) {
+                reportViewer.loadData(responseText);
+            });
+        }
+
+        //按异步方式请求一个URL的文本数据，在成功后调用回调函数
+        function ajaxRequestText(url, method, callback) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    callback(xmlhttp.responseText);
+                }
+            }
+            xmlhttp.open(method, encodeURI(url), true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body onload="window_onload()">
+    <div id="report_holder">
+    </div>
+</body>
+</html>

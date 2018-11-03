@@ -1,0 +1,8 @@
+﻿{
+"Table":[
+{"Region":"东北","ProductID":1,"ProductName":"苹果汁","Amount":810},
+{"Region":"东北","ProductID":10,"ProductName":"蟹","Amount":843.2},
+{"Region":"东北","ProductID":11,"ProductName":"民众奶酪","Amount":1050},
+{"Region":"东北","ProductID":21,"ProductName":"花生","Amount":420}
+]
+}

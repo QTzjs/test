@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "html", ".", "{56451BB6-6442-4018-A953-36247F4A8063}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/htm"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\GRExtend\WebSamples\htm\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\htm\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/htm"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\GRExtend\WebSamples\htm\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\htm\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1201"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56451BB6-6442-4018-A953-36247F4A8063}.Debug|.NET.ActiveCfg = Debug|.NET
+		{56451BB6-6442-4018-A953-36247F4A8063}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
