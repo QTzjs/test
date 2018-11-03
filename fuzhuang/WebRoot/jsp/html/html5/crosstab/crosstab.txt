@@ -1,7 +1,0 @@
-﻿<xml>
-<row><CustomerId>ANATR</CustomerId><CompanyName>东南实业</CompanyName><ProductID>3</ProductID><ProductName>蕃茄酱</ProductName><Quantity>6</Quantity><Amount>60</Amount></row>
-<row><CustomerId>ANATR</CustomerId><CompanyName>东南实业</CompanyName><ProductID>11</ProductID><ProductName>民众奶酪</ProductName><Quantity>2</Quantity><Amount>42</Amount></row>
-<row><CustomerId>ANTON</CustomerId><CompanyName>坦森行贸易</CompanyName><ProductID>2</ProductID><ProductName>牛奶</ProductName><Quantity>20</Quantity><Amount>380</Amount></row>
-<row><CustomerId>ANTON</CustomerId><CompanyName>坦森行贸易</CompanyName><ProductID>11</ProductID><ProductName>民众奶酪</ProductName><Quantity>24</Quantity><Amount>403.2</Amount></row>
-<row><CustomerId>WOLZA</CustomerId><CompanyName>汉典电机</CompanyName><ProductID>2</ProductID><ProductName>牛奶</ProductName><Quantity>10</Quantity><Amount>190</Amount></row>
-</xml>

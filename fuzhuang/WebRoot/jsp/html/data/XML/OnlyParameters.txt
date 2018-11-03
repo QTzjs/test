@@ -1,4 +1,0 @@
-﻿<xml>
-<row><Payto>永大企业</Payto><Date>1996-07-12 00:00:00.0</Date><Year>1996</Year><Month>7</Month><Day>12</Day><Amount>1148.3300</Amount><Usage1>白石路 116 号</Usage1><Remark>港务口街 29 号</Remark></row>
-</xml>
-

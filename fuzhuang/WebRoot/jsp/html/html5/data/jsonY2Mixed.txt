@@ -1,9 +1,0 @@
-﻿{
-"Table":[
-{"Region":"东北","Amount":1050,"Quantity":50},
-{"Region":"华北","Amount":3355.8,"Quantity":163},
-{"Region":"华东","Amount":667.8,"Quantity":36},
-{"Region":"华南","Amount":2037,"Quantity":110},
-{"Region":"西南","Amount":1575,"Quantity":75}
-]
-}

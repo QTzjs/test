@@ -1,3 +1,0 @@
-﻿1、通过图表的记录集加载数据，记录集既可以加载 XML 数据，也可以加载 JSON 数据，见 ChartRecordsetData.grf。
-2、明细网格的记录集数据与图表的记录集数据可以打包在一个数据包中，见 DetailWithChart.grf。
-相关详细说明请参考帮助中“报表插件(WEB报表)->WEB报表数据”部分。

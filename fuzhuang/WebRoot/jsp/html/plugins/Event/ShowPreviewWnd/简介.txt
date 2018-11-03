@@ -1,5 +1,0 @@
-﻿响应 IGridppReport.ShowPreviewWnd 事件，实现自定义Grid++Report默认打印预览窗口，即调用 IGridppReport.PrintPreview 方法 或 IGridppReport.PrintPreviewEx 方法 显示出来的打印预览窗口。
-
-
-
- 
